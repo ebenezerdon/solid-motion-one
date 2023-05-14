@@ -1,5 +1,16 @@
-.Home {
+.Home,
+.About {
   text-align: center;
+}
+
+nav {
+  display: flex;
+  font-size: 1.2em;
+  justify-content: center;
+  color: #fff;
+  gap: 1em;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
 }
 
 .openButton {
@@ -21,9 +32,7 @@
   width: 50vw;
   left: 0;
   right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+  margin: 2em auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

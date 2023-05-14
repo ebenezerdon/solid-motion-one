@@ -11,7 +11,7 @@ const Home = () => {
   }
 
   return (
-    <div class={styles.Home}>
+    <Motion animate={{ opacity: [0, 1] }} class={styles.Home}>
       <h1>Hello Motion One!</h1>
       <button class={styles.openButton} onClick={() => toggleModal()}>
         {modalIsOpen() ? 'Close Modal' : 'Open Modal'}
@@ -31,7 +31,7 @@ const Home = () => {
           </Motion.div>
         </Show>
       </Presence>
-    </div>
+    </Motion>
   )
 }
 
