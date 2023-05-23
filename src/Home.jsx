@@ -20,10 +20,17 @@ const Home = () => {
       <Presence>
         <Show when={modalIsOpen()}>
           <Motion.div
-            animate={{ scale: [0, 1], opacity: [0, 1] }}
-            exit={{ scale: [1, 0], opacity: [1, 0] }}
-            transition={{ duration: 0.3 }}
             class={styles.Modal}
+            animate={{ scale: [0, 1], opacity: [0, 1] }}
+            transition={{ duration: 0.5, ease: 'ease-in-out' }}
+            exit={{
+              scale: 0,
+              opacity: 0,
+              transition: {
+                duration: 2,
+                ease: 'ease-in',
+              },
+            }}
           >
             <div>
               <h1>Hello World!</h1>
